@@ -31,29 +31,29 @@ class _HomeScreenState extends State<HomeScreen> {
               )
             ],
           ),
-          SliverList(
-            delegate:
-                SliverChildBuilderDelegate((BuildContext context, int index) {
-              if (index == 0) {
-                return Container(
-                  margin: EdgeInsets.fromLTRB(20, 20, 20, 10),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black12,
-                            offset: Offset(0, 2),
-                            blurRadius: 6.0)
-                      ],
-                      borderRadius: BorderRadius.circular(10.0)),
-                );
-              } else {
-                return SizedBox(
-                  height: 0,
-                );
-              }
-            }),
-          )
+          // SliverList(
+          //   delegate:
+          //       SliverChildBuilderDelegate((BuildContext context, int index) {
+          //     if (index == 0) {
+          //       return Container(
+          //         margin: EdgeInsets.fromLTRB(20, 20, 20, 10),
+          //         decoration: BoxDecoration(
+          //             color: Colors.white,
+          //             boxShadow: [
+          //               BoxShadow(
+          //                   color: Colors.black12,
+          //                   offset: Offset(0, 2),
+          //                   blurRadius: 6.0)
+          //             ],
+          //             borderRadius: BorderRadius.circular(10.0)),
+          //       );
+          //     } else {
+          //       return SizedBox(
+          //         height: 0,
+          //       );
+          //     }
+          //   }),
+          // )
         ],
       ),
     );
