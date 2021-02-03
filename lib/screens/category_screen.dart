@@ -58,6 +58,13 @@ class _CatergoryScreenState extends State<CatergoryScreen> {
 
   @override
   Widget build(BuildContext context) {
+    double totalAmountSpent = 0;
+    widget.catergory.expenses.forEach((Expense expense) {
+      totalAmountSpent += expense.cost;
+    });
+    final double amountLeft = widget.catergory.maxAmount - totalAmountSpent;
+    final double percent = amountLeft / widget.catergory.maxAmount;
+
     return Container();
   }
 }
